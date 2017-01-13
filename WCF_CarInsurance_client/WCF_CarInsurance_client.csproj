@@ -57,6 +57,7 @@
     <Compile Include="Basic.Designer.cs">
       <DependentUpon>Basic.cs</DependentUpon>
     </Compile>
+    <Compile Include="catchuser.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -20,8 +20,10 @@ namespace WCF_CarInsurance_client
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             WCF_CarInsurance_client.WCF_CarInsurance.Service1Client client = new WCF_CarInsurance_client.WCF_CarInsurance.Service1Client("BasicHttpBinding_IService1");
-            DataSet dsread = client.ReadBasicInformation("ss");
+
+            DataSet dsread = client.ReadBasicInformation(catchuser.identity);
             try
             {
                 label1.Text = dsread.Tables[0].Rows[0][0].ToString();

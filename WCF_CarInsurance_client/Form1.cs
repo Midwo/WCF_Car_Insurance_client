@@ -32,5 +32,12 @@ namespace WCF_CarInsurance_client
             Basic m = new Basic();
             m.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+           catchuser.identity = textBox1.Text;
+            textBox1.Clear();
+            label7.Text = "Remember identity: " + catchuser.identity + "";
+        }
     }
 }
