@@ -26,5 +26,11 @@ namespace WCF_CarInsurance_client
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Basic m = new Basic();
+            m.Show();
+        }
     }
 }
