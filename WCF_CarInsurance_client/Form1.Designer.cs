@@ -104,12 +104,14 @@
             this.newAccountToolStripMenuItem.Name = "newAccountToolStripMenuItem";
             this.newAccountToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.newAccountToolStripMenuItem.Text = "New Account";
+            this.newAccountToolStripMenuItem.Click += new System.EventHandler(this.newAccountToolStripMenuItem_Click);
             // 
             // newAccidentsToolStripMenuItem
             // 
             this.newAccidentsToolStripMenuItem.Name = "newAccidentsToolStripMenuItem";
             this.newAccidentsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.newAccidentsToolStripMenuItem.Text = "New Accidents";
+            this.newAccidentsToolStripMenuItem.Click += new System.EventHandler(this.newAccidentsToolStripMenuItem_Click);
             // 
             // seachrToolStripMenuItem
             // 
@@ -333,6 +335,7 @@
             this.button3.Size = new System.Drawing.Size(62, 56);
             this.button3.TabIndex = 6;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -344,6 +347,7 @@
             this.button2.Size = new System.Drawing.Size(62, 56);
             this.button2.TabIndex = 4;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 

@@ -139,6 +139,32 @@ namespace WCF_CarInsurance_client
             NewInsurance m = new NewInsurance();
             m.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            NewAccount m = new NewAccount();
+            m.Show();
+
+        }
+
+        private void newAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewAccount m = new NewAccount();
+            m.Show();
+                
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            New_Accidents m = new New_Accidents();
+            m.Show();
+        }
+
+        private void newAccidentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            New_Accidents m = new New_Accidents();
+            m.Show();
+        }
     }
 }
 

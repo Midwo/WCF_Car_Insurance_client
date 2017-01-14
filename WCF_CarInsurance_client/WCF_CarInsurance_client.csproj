@@ -82,6 +82,12 @@
     <Compile Include="NewInsurance.Designer.cs">
       <DependentUpon>NewInsurance.cs</DependentUpon>
     </Compile>
+    <Compile Include="New_Accidents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Accidents.Designer.cs">
+      <DependentUpon>New_Accidents.cs</DependentUpon>
+    </Compile>
     <Compile Include="simpleinformation.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewInsurance.resx">
       <DependentUpon>NewInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Accidents.resx">
+      <DependentUpon>New_Accidents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
