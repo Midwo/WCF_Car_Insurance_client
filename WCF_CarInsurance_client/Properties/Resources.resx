@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Close_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="File_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\File_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Add friend_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Add friend_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Document id_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Document id_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Business greeting_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Business greeting_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Profile_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Profile_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,7 +136,13 @@
   <data name="Road_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Road_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Business greeting_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Business greeting_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Document id_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Document id_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit text_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit text_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Checkmark_#222222_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checkmark_#222222_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

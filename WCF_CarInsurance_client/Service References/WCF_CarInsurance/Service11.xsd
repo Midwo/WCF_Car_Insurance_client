@@ -121,4 +121,25 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="UpdateBasicInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" type="xs:int" />
+        <xs:element minOccurs="0" name="personal_identity_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="identity_card_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name_surname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="discounts" type="xs:float" />
+        <xs:element minOccurs="0" name="phone_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="birthday" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBasicInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateBasicInformationResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

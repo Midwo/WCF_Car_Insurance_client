@@ -83,6 +83,16 @@ namespace WCF_CarInsurance_client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Checkmark__222222_64px {
+            get {
+                object obj = ResourceManager.GetObject("Checkmark_#222222_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Close__222222_64px {
             get {
                 object obj = ResourceManager.GetObject("Close_#222222_64px", resourceCulture);
@@ -96,6 +106,16 @@ namespace WCF_CarInsurance_client.Properties {
         internal static System.Drawing.Bitmap Document_id__222222_64px {
             get {
                 object obj = ResourceManager.GetObject("Document id_#222222_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit_text__222222_64px {
+            get {
+                object obj = ResourceManager.GetObject("Edit text_#222222_64px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

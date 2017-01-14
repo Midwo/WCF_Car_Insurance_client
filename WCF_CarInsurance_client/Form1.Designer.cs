@@ -32,14 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.zapiszToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newInsuranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,10 +40,19 @@
             this.basicInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allInsuranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allAccidentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -81,6 +82,66 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // zapiszToolStripMenuItem
+            // 
+            this.zapiszToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newInsuranceToolStripMenuItem,
+            this.newAccountToolStripMenuItem,
+            this.newAccidentsToolStripMenuItem});
+            this.zapiszToolStripMenuItem.Name = "zapiszToolStripMenuItem";
+            this.zapiszToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.zapiszToolStripMenuItem.Text = "Save";
+            // 
+            // newInsuranceToolStripMenuItem
+            // 
+            this.newInsuranceToolStripMenuItem.Name = "newInsuranceToolStripMenuItem";
+            this.newInsuranceToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.newInsuranceToolStripMenuItem.Text = "New Insurance";
+            this.newInsuranceToolStripMenuItem.Click += new System.EventHandler(this.newInsuranceToolStripMenuItem_Click);
+            // 
+            // newAccountToolStripMenuItem
+            // 
+            this.newAccountToolStripMenuItem.Name = "newAccountToolStripMenuItem";
+            this.newAccountToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.newAccountToolStripMenuItem.Text = "New Account";
+            // 
+            // newAccidentsToolStripMenuItem
+            // 
+            this.newAccidentsToolStripMenuItem.Name = "newAccidentsToolStripMenuItem";
+            this.newAccidentsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.newAccidentsToolStripMenuItem.Text = "New Accidents";
+            // 
+            // seachrToolStripMenuItem
+            // 
+            this.seachrToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.basicInformationToolStripMenuItem,
+            this.allInsuranceToolStripMenuItem,
+            this.allAccidentsToolStripMenuItem});
+            this.seachrToolStripMenuItem.Name = "seachrToolStripMenuItem";
+            this.seachrToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.seachrToolStripMenuItem.Text = "Seachr";
+            // 
+            // basicInformationToolStripMenuItem
+            // 
+            this.basicInformationToolStripMenuItem.Name = "basicInformationToolStripMenuItem";
+            this.basicInformationToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.basicInformationToolStripMenuItem.Text = "Basic Information";
+            this.basicInformationToolStripMenuItem.Click += new System.EventHandler(this.basicInformationToolStripMenuItem_Click);
+            // 
+            // allInsuranceToolStripMenuItem
+            // 
+            this.allInsuranceToolStripMenuItem.Name = "allInsuranceToolStripMenuItem";
+            this.allInsuranceToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.allInsuranceToolStripMenuItem.Text = "All Insurance";
+            this.allInsuranceToolStripMenuItem.Click += new System.EventHandler(this.allInsuranceToolStripMenuItem_Click);
+            // 
+            // allAccidentsToolStripMenuItem
+            // 
+            this.allAccidentsToolStripMenuItem.Name = "allAccidentsToolStripMenuItem";
+            this.allAccidentsToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.allAccidentsToolStripMenuItem.Text = "All Accidents";
+            this.allAccidentsToolStripMenuItem.Click += new System.EventHandler(this.allAccidentsToolStripMenuItem_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
@@ -96,15 +157,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Save:";
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(6, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "New Insurance:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(6, 174);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(160, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "New Accidents:";
             // 
             // label2
             // 
@@ -116,15 +177,15 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "New Account:";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(6, 174);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 25);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "New Accidents:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(6, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "New Insurance:";
             // 
             // groupBox2
             // 
@@ -144,6 +205,46 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Seachr:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(8, 284);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(118, 16);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Not saved number";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Location = new System.Drawing.Point(7, 223);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(123, 20);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Identity number:";
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.Location = new System.Drawing.Point(195, 245);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(62, 29);
+            this.button7.TabIndex = 5;
+            this.button7.Text = "Save";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox1.Location = new System.Drawing.Point(11, 246);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(178, 26);
+            this.textBox1.TabIndex = 6;
             // 
             // label4
             // 
@@ -175,127 +276,46 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Basic Information:";
             // 
-            // zapiszToolStripMenuItem
+            // splitter1
             // 
-            this.zapiszToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newInsuranceToolStripMenuItem,
-            this.newAccountToolStripMenuItem,
-            this.newAccidentsToolStripMenuItem});
-            this.zapiszToolStripMenuItem.Name = "zapiszToolStripMenuItem";
-            this.zapiszToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.zapiszToolStripMenuItem.Text = "Save";
-            // 
-            // newInsuranceToolStripMenuItem
-            // 
-            this.newInsuranceToolStripMenuItem.Name = "newInsuranceToolStripMenuItem";
-            this.newInsuranceToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.newInsuranceToolStripMenuItem.Text = "New Insurance";
-            // 
-            // newAccountToolStripMenuItem
-            // 
-            this.newAccountToolStripMenuItem.Name = "newAccountToolStripMenuItem";
-            this.newAccountToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.newAccountToolStripMenuItem.Text = "New Account";
-            // 
-            // newAccidentsToolStripMenuItem
-            // 
-            this.newAccidentsToolStripMenuItem.Name = "newAccidentsToolStripMenuItem";
-            this.newAccidentsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.newAccidentsToolStripMenuItem.Text = "New Accidents";
-            // 
-            // seachrToolStripMenuItem
-            // 
-            this.seachrToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.basicInformationToolStripMenuItem,
-            this.allInsuranceToolStripMenuItem,
-            this.allAccidentsToolStripMenuItem});
-            this.seachrToolStripMenuItem.Name = "seachrToolStripMenuItem";
-            this.seachrToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.seachrToolStripMenuItem.Text = "Seachr";
-            // 
-            // basicInformationToolStripMenuItem
-            // 
-            this.basicInformationToolStripMenuItem.Name = "basicInformationToolStripMenuItem";
-            this.basicInformationToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.basicInformationToolStripMenuItem.Text = "Basic Information";
-            // 
-            // allInsuranceToolStripMenuItem
-            // 
-            this.allInsuranceToolStripMenuItem.Name = "allInsuranceToolStripMenuItem";
-            this.allInsuranceToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.allInsuranceToolStripMenuItem.Text = "All Insurance";
-            // 
-            // allAccidentsToolStripMenuItem
-            // 
-            this.allAccidentsToolStripMenuItem.Name = "allAccidentsToolStripMenuItem";
-            this.allAccidentsToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.allAccidentsToolStripMenuItem.Text = "All Accidents";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(195, 245);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(62, 29);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Save";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(11, 246);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 26);
-            this.textBox1.TabIndex = 6;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(8, 284);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 16);
-            this.label7.TabIndex = 7;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(7, 223);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 20);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Identity number:";
+            this.splitter1.Location = new System.Drawing.Point(0, 24);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 328);
+            this.splitter1.TabIndex = 0;
+            this.splitter1.TabStop = false;
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.Enabled = false;
             this.button4.Location = new System.Drawing.Point(195, 161);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(62, 56);
             this.button4.TabIndex = 6;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.Enabled = false;
             this.button5.Location = new System.Drawing.Point(195, 90);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(62, 56);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.Enabled = false;
             this.button6.Location = new System.Drawing.Point(195, 19);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(62, 56);
@@ -335,13 +355,15 @@
             this.button1.Size = new System.Drawing.Size(62, 56);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(553, 359);
+            this.ClientSize = new System.Drawing.Size(553, 352);
+            this.Controls.Add(this.splitter1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
@@ -394,6 +416,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Splitter splitter1;
     }
 }
 

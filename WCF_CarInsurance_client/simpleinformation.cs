@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace WCF_CarInsurance_client
 {
-    public class catchuser
+    public class simpleinformation
     {
         public static string identity;
 
-      
+        public static int error;
+
+        public static string ID;
     }
 }

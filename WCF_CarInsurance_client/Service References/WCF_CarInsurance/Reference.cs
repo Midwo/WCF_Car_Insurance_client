@@ -555,6 +555,12 @@ namespace WCF_CarInsurance_client.WCF_CarInsurance {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ReadHistoryOfAccidents", ReplyAction="http://tempuri.org/IService1/ReadHistoryOfAccidentsResponse")]
         System.Threading.Tasks.Task<System.Data.DataSet> ReadHistoryOfAccidentsAsync(string personal_identity_number);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateBasicInformation", ReplyAction="http://tempuri.org/IService1/UpdateBasicInformationResponse")]
+        string UpdateBasicInformation(int ID, string personal_identity_number, string identity_card_number, string address, string name_surname, float discounts, string phone_number, System.DateTime birthday);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateBasicInformation", ReplyAction="http://tempuri.org/IService1/UpdateBasicInformationResponse")]
+        System.Threading.Tasks.Task<string> UpdateBasicInformationAsync(int ID, string personal_identity_number, string identity_card_number, string address, string name_surname, float discounts, string phone_number, System.DateTime birthday);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -630,6 +636,14 @@ namespace WCF_CarInsurance_client.WCF_CarInsurance {
         
         public System.Threading.Tasks.Task<System.Data.DataSet> ReadHistoryOfAccidentsAsync(string personal_identity_number) {
             return base.Channel.ReadHistoryOfAccidentsAsync(personal_identity_number);
+        }
+        
+        public string UpdateBasicInformation(int ID, string personal_identity_number, string identity_card_number, string address, string name_surname, float discounts, string phone_number, System.DateTime birthday) {
+            return base.Channel.UpdateBasicInformation(ID, personal_identity_number, identity_card_number, address, name_surname, discounts, phone_number, birthday);
+        }
+        
+        public System.Threading.Tasks.Task<string> UpdateBasicInformationAsync(int ID, string personal_identity_number, string identity_card_number, string address, string name_surname, float discounts, string phone_number, System.DateTime birthday) {
+            return base.Channel.UpdateBasicInformationAsync(ID, personal_identity_number, identity_card_number, address, name_surname, discounts, phone_number, birthday);
         }
     }
 }
