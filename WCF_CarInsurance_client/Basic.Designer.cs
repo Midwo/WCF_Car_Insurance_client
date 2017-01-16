@@ -104,11 +104,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label7.Location = new System.Drawing.Point(77, 199);
+            this.label7.Location = new System.Drawing.Point(103, 199);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 16);
+            this.label7.Size = new System.Drawing.Size(64, 16);
             this.label7.TabIndex = 9;
-            this.label7.Text = "Birthday date:";
+            this.label7.Text = "Birthdate:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
